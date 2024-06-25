@@ -1,5 +1,5 @@
 //
-//  HeroCellView.swift
+//  PokemonCellView.swift
 //  pokemons
 //
 //  Created by Pablo Jesús Peragón Garrido on 24/6/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HeroCellView: View {
+struct PokemonCellView: View {
     var pokemon: Pokemon
     
     init(pokemon: Pokemon) {
@@ -29,5 +29,5 @@ struct HeroCellView: View {
     }
 
 #Preview {
-    HeroCellView(pokemon: Pokemon(name: "bulbasaur", url: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"))
+    PokemonCellView(pokemon: Pokemon(id: "1", name: "bulbasaur", url: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"))
 }
