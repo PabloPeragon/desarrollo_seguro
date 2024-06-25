@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E2CD5552C29FFDB00E32981 /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CD5542C29FFDB00E32981 /* RepositoryProtocol.swift */; };
+		6E2CD5582C2A005200E32981 /* RepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CD5572C2A005200E32981 /* RepositoryImpl.swift */; };
+		6E2CD55E2C2A0BB500E32981 /* HeroCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CD55D2C2A0BB500E32981 /* HeroCellView.swift */; };
 		6E7AC24C2C28250C00AFF77F /* pokemonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AC24B2C28250C00AFF77F /* pokemonsApp.swift */; };
 		6E7AC24E2C28250C00AFF77F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AC24D2C28250C00AFF77F /* ContentView.swift */; };
 		6E7AC2502C28250E00AFF77F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7AC24F2C28250E00AFF77F /* Assets.xcassets */; };
@@ -19,6 +22,7 @@
 		6E7AC2802C283A7000AFF77F /* URLRequestHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AC27F2C283A7000AFF77F /* URLRequestHelperProtocol.swift */; };
 		6E7AC2822C283A8900AFF77F /* URLRequestHelperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AC2812C283A8900AFF77F /* URLRequestHelperImpl.swift */; };
 		6E7AC2842C283D4E00AFF77F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AC2832C283D4E00AFF77F /* Endpoints.swift */; };
+		6E9B309F2C2AC389005B2E7B /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9B309E2C2AC389005B2E7B /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E2CD5542C29FFDB00E32981 /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
+		6E2CD5572C2A005200E32981 /* RepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryImpl.swift; sourceTree = "<group>"; };
+		6E2CD55D2C2A0BB500E32981 /* HeroCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellView.swift; sourceTree = "<group>"; };
 		6E7AC2482C28250C00AFF77F /* pokemons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokemons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7AC24B2C28250C00AFF77F /* pokemonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemonsApp.swift; sourceTree = "<group>"; };
 		6E7AC24D2C28250C00AFF77F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +61,7 @@
 		6E7AC27F2C283A7000AFF77F /* URLRequestHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestHelperProtocol.swift; sourceTree = "<group>"; };
 		6E7AC2812C283A8900AFF77F /* URLRequestHelperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestHelperImpl.swift; sourceTree = "<group>"; };
 		6E7AC2832C283D4E00AFF77F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		6E9B309E2C2AC389005B2E7B /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E2CD5562C2A003100E32981 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				6E2CD5572C2A005200E32981 /* RepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6E2CD5592C2A075A00E32981 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6E2CD55A2C2A077D00E32981 /* HeroCellView */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6E2CD55A2C2A077D00E32981 /* HeroCellView */ = {
+			isa = PBXGroup;
+			children = (
+				6E2CD55D2C2A0BB500E32981 /* HeroCellView.swift */,
+			);
+			path = HeroCellView;
+			sourceTree = "<group>";
+		};
 		6E7AC23F2C28250B00AFF77F = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +181,7 @@
 		6E7AC2762C28275D00AFF77F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				6E9B309D2C2AC369005B2E7B /* Models */,
 				6E7AC2792C282DC800AFF77F /* Protocols */,
 			);
 			path = Domain;
@@ -157,6 +190,7 @@
 		6E7AC2772C28276A00AFF77F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				6E2CD5562C2A003100E32981 /* Repository */,
 				6E7AC27A2C2832A100AFF77F /* Remote */,
 			);
 			path = Data;
@@ -165,6 +199,7 @@
 		6E7AC2782C28277300AFF77F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				6E2CD5592C2A075A00E32981 /* Home */,
 				6E7AC24D2C28250C00AFF77F /* ContentView.swift */,
 				6E7AC2512C28250E00AFF77F /* Preview Content */,
 			);
@@ -176,6 +211,7 @@
 			children = (
 				6E7AC27B2C2834D400AFF77F /* RemoteDataSourceProtocol.swift */,
 				6E7AC27F2C283A7000AFF77F /* URLRequestHelperProtocol.swift */,
+				6E2CD5542C29FFDB00E32981 /* RepositoryProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -188,6 +224,14 @@
 				6E7AC2832C283D4E00AFF77F /* Endpoints.swift */,
 			);
 			path = Remote;
+			sourceTree = "<group>";
+		};
+		6E9B309D2C2AC369005B2E7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E9B309E2C2AC389005B2E7B /* Pokemon.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +369,10 @@
 				6E7AC2802C283A7000AFF77F /* URLRequestHelperProtocol.swift in Sources */,
 				6E7AC2842C283D4E00AFF77F /* Endpoints.swift in Sources */,
 				6E7AC27E2C28382F00AFF77F /* RemoteDataSourceImpl.swift in Sources */,
+				6E2CD5552C29FFDB00E32981 /* RepositoryProtocol.swift in Sources */,
+				6E9B309F2C2AC389005B2E7B /* Pokemon.swift in Sources */,
+				6E2CD55E2C2A0BB500E32981 /* HeroCellView.swift in Sources */,
+				6E2CD5582C2A005200E32981 /* RepositoryImpl.swift in Sources */,
 				6E7AC24C2C28250C00AFF77F /* pokemonsApp.swift in Sources */,
 				6E7AC2822C283A8900AFF77F /* URLRequestHelperImpl.swift in Sources */,
 			);
